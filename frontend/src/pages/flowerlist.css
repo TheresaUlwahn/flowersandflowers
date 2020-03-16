@@ -1,3 +1,5 @@
+/* CSS for the list of the flower */
+
 body {
   margin: 0px;
   font-family: 'Tangerine', cursive;
@@ -21,12 +23,6 @@ p {
   border: 35px solid #000;
   background-color: #000;
   position: relative;
-  /* flex-direction: row; */
-  /* flex-wrap: wrap; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* position: relative; */
-  /* align-items: center;*/
 }
 
 .flowerImg {
@@ -39,7 +35,7 @@ p {
 .flowerTitles {
   position: absolute;
   bottom: 0;
-  text-align: left;
+  text-align: center;
   background-size: cover;
   padding: 20px;
   opacity: 0; /* equals display:none and works with opacity:1*/
@@ -63,7 +59,32 @@ p {
 
 /*MEDIA QUERIES */
 
-@media (min-width: 650px) {
+@media only screen and (min-width: 600px) {
+  /*For tablets */
+  .flowerNamePost {
+    width: 49%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+  }
+
+  .flowerTitles {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-size: cover;
+    padding: 20px;
+    opacity: 0; /* equals display:none and works with opacity:1*/
+    color: white; 
+    z-index: 2;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
   .flowerNamePost {
     width: 25%;
     flex-direction: row;
@@ -74,5 +95,15 @@ p {
     align-items: center;
   }
 
+  .flowerTitles {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    padding: 20px;
+    opacity: 0; /* equals display:none and works with opacity:1*/
+    color: white; 
+    z-index: 2;
+  }
 }
 

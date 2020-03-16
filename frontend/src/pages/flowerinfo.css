@@ -1,86 +1,137 @@
-body {
-    margin: 0px;
+/* CSS for all information about the flowers */
+
+.infoContainer {
+  display: flex;
+  display: block;
+  text-align: left;
 }
 
-/*.infoContainer {
-    width: 100%;
-    align-content: center;
-    text-align: left;
-    /*position: relative;
-  }*/
+h2 {
+  font-family: 'Tangerine';
+  padding: 0px;
+  margin: 0px;
+  color: white;
+  font-size: 30px;
+}
+
+p {
+  color: #ebfefe;
+  font-family: 'Karma';
+  font-size: 20px;
+}
 
 .backDrop {
-    justify-content: flex-end;
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    flex-direction: column;
-    min-height: 100%;
-    min-width: 1024px;
-   
-    /* Set up proportionate scaling */
-    width: 100%;
-    height: auto;
-    /* Set up positioning */
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
+  justify-content: flex-end;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-direction: column;
+  min-height: 100%;
+  min-width: 1024px;
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: auto;
 }
 
-.infoContainer .backLink {
-    position: absolute;
-    display: inline-flex;
-    color: #fff;
-    align-items: center;
-    font-weight: 700;
-    text-decoration: none;
-    left: 50px;
-    top: 20px;
+.backLink {
+  position: absolute;
+  display: inline-flex;
+  color: #fff;
+  align-items: center;
+  font-weight: 700;
+  text-decoration: none;
+  left: 50px;
+  top: 20px;
 }
 
 .backLinkImg {
-    width: 10%;
+  width: 10%;
 }
 
 .backLink:hover svg {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 /*makes the button move to the side when hover*/
-.infoContainer .backLink svg {
-    transition: margin-right .3s ease-in-out;  
+.backDrop .backLink svg {
+  transition: margin-right .3s ease-in-out;  
 }
 
-.infoContainer .infoBox {
-    z-index: 1;
-    display: flex;
-    position: absolute;
-    align-items: flex-end;
-    padding: 50px;
-    bottom: 0px;
-}
-
-.infoPoster {
-    float: left;
-    border: 10px solid white;
-    width: 230px;
+.infoBox {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  align-items: flex-end;
+  padding: 50px;
 }
 
 .titleInfo {
-    display: block;
-    padding-left: 20px;
-    justify-content: space-evenly;
+  display: block;
+  padding-left: 20px;
+  justify-content: space-evenly;
 }
 
 .flowerTitle {
-    display: flex;
+  font-family: 'Tangerine';
+  font-size: 45px;
+  display: flex;
 }
 
-.flowerVotes {
-    color: red;
-    display: contents;
-    font-size: 12px;
+.flowerNotes {
+  color: #ebfefe;
+  font-family: 'Karma';
+  padding-left: 5px;
+  display: contents;
+  font-size: 20px;
 }
+
+/*MEDIA QUERIES */
+
+@media only screen and (min-width: 600px) {
+  /*For tablets */
+
+  .infoContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .flowerForm{
+    flex-wrap: wrap;
+  }
+
+  .infoBox {
+    margin-top: 60px; 
+    z-index: 1;
+    display: block;
+    flex-wrap: wrap;
+    position: absolute;
+    align-items: flex-end;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  
+  .infoContainer .infoBox {
+    align-items: flex-end;
+    padding: 50px;
+    display: block;
+  }
+
+  .titleInfo {
+    display: inline-block;
+  }
+}
+
+
 

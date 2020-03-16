@@ -1,3 +1,4 @@
+/* CSS for the header */
 
 .container h1 {
   font-size: 85px;
@@ -31,6 +32,7 @@ a {
 /*margin right for space between the hamburger and logo*/
   
 .hamburger {
+  margin-left: 20px;
   display: flex;
   width: 30px;
   height: 30px;
@@ -68,7 +70,7 @@ nav {
 
 @media (min-width: 650px) {
   
-/*Show the navbar and hide the hamburger in this size*/
+  /*Show the navbar and hide the hamburger in this size*/
 
   nav {
     display: inline-flex;

@@ -13,20 +13,20 @@
 }
 
 .flower-message h3 {
-  font-family: 'Tangerine', cursive;
-  font-size: 25px;
+  font-family: 'Karma';
+  font-size: 18px;
   margin: 0;
-  color: #fff;
+  color: #ebfefe;
 }
 
 .flower-message p {
   border-bottom: 0px;
   margin: 0px;
   font-size: 13px;
-  color: #fff;
-
+  color: #cab2da;
 }
 
+/* Created a heart for future like possibility */
 .flower-heart {
   background-color: pink;
   border-radius: 100px;

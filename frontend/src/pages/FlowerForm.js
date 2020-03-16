@@ -14,7 +14,7 @@ export const FlowerForm = props => {
 
   return (
     <form className='flower-form'>
-      <h3>Message to ?</h3>
+      <h3>Comments</h3>
       <textarea
         rows='3'
         onChange={event => setFlowerMessage(event.target.value)}>
