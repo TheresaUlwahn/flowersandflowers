@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+
+body,
+html {
+  margin: 0;
+  overflow-x: hidden;
+  background: black;
+  font-family: 'Tangerine', cursive;
+  font-family: 'Roboto', sans-serif;  
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
+
+code {
+  font-family: 'Tangerine', cursive;
+  font-family: 'Roboto', sans-serif;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.flowerContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
