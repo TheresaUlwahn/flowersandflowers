@@ -1,9 +1,19 @@
-/* HEADER WITH HEROPICTURE AND NAVBAR*/
 
+.container h1 {
+  font-size: 85px;
+  padding: 60px;
+}
+
+a {
+  font-family: Roboto;
+}
+
+/* HEADER WITH HEROPICTURE AND NAVBAR*/
 .container {
-  /* The "linear-gradient" gives a darker feeling to the her image*/
+  margin: 0 auto;
+  /* The "linear-gradient" gives a darker feeling to the hero image*/
   background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/Snowflake.JPG");
-  /* To make the her picture cover the screen */
+  /* To make the hero picture cover the screen */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -13,12 +23,12 @@
   color: white;
 }
   
-  /*nav bar becomes hamburger model*/
-  /*this div becomes the container for the hamburger menu,  display flex*/
-  /*same height and width to make it a square*/
-  /*flex/direction column to make them separate*/
-  /*justify content to make them spread out / space between the lines*/
-  /*margin right for space between the hamburger and logo*/
+/*nav bar becomes hamburger model*/
+/*this div becomes the container for the hamburger menu,  display flex*/
+/*same height and width to make the hamburger a square*/
+/*flex/direction column to make them separate*/
+/*justify content to make them spread out / space between the lines*/
+/*margin right for space between the hamburger and logo*/
   
 .hamburger {
   display: flex;
@@ -28,20 +38,20 @@
   justify-content: space-between;
 }
    
-    /* lines for the hamburger menu, same width as the container, but thinner*/ 
+/* lines for the hamburger menu, same width as the container, but thinner*/ 
 .hamburger div {
   width: 30px;
   height: 5px;
   background: #fff;
   border-radius: 5px;
 }
-  
-    /*the nav is hidden on the small screen*/
+
+/*the nav is hidden on the small screen*/
 nav {
   display: none;
 }
   
-  /* BUTTON */
+/* BUTTON */
   
 .container a {
   color: white;
@@ -54,24 +64,23 @@ nav {
   display: inline-block;
 }
 
-  /*MEDIA QUERIES */
+/*MEDIA QUERIES */
 
 @media (min-width: 650px) {
   
-  /*Show the navbar and hide the hamburger in this size*/
+/*Show the navbar and hide the hamburger in this size*/
 
   nav {
     display: inline-flex;
     justify-content: space-around;
     text-align: center;
     width: -webkit-fill-available;
-}
+  }
   .hamburger {
     display: none;
   }
 
   .container a {
-    position: relative;
-    
+    position: relative; 
   }
 }
