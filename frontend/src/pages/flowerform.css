@@ -28,11 +28,14 @@
 .flower-form h3 {
   margin: 0;
   font-family: 'Karma';
+  color: white; 
 }
 .flower-form p {
   margin: 0;
   font-family: 'Karma';
-  color: #cab2da;
+  color: white;
+  font-size: 18px;
+  text-align: center;
 }
   
 .flower-form button {
@@ -55,4 +58,5 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  
 }

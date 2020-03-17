@@ -46,6 +46,7 @@ export const FlowerInfo = () => {
       .then(() => {
         // console.log('posted  !')
         // window.location.reload();
+        setPostedMessage(message)
       })
       .catch(err => console.log("error:", err))
   }
