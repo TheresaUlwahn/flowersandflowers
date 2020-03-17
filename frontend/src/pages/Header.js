@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <div className="container">    
       <nav className="navbar">
-        {/* Empty link for future pages */}
+        {/* Empty link for future menu pages  */}
         <a href="#">Home</a>
         <a href="#">About us</a>
         <a href="#">Subscribe</a>

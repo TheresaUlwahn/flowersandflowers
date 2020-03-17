@@ -9,7 +9,7 @@ a {
   font-family: Roboto;
 }
 
-/* HEADER WITH HEROPICTURE AND NAVBAR*/
+/* HEADER WITH HERO PICTURE AND NAVBAR*/
 .container {
   margin: 0 auto;
   /* The "linear-gradient" gives a darker feeling to the hero image*/
@@ -25,7 +25,7 @@ a {
 }
   
 /*nav bar becomes hamburger model*/
-/*this div becomes the container for the hamburger menu,  display flex*/
+/*this becomes the container for the hamburger menu,  display flex*/
 /*same height and width to make the hamburger a square*/
 /*flex/direction column to make them separate*/
 /*justify content to make them spread out / space between the lines*/

@@ -8,7 +8,7 @@ export const FlowerForm = props => {
 
   const handleSubmit = event => {
     event.preventDefault()
-    props.onFormSubmit(flowerId, flowerMessage) // ONFORMSUBMIT COMES AS A PROPS FROM FLOWERINFO.JS
+    props.onFormSubmit(flowerId, flowerMessage)
     setFlowerMessage("")
   }
 
@@ -25,7 +25,6 @@ export const FlowerForm = props => {
           type='submit'
           onClick={handleSubmit}
           disabled={flowerMessage.length < 6 || flowerMessage.length > 140 ? true : false}>
-          
           <span role='img' aria-label='Heart' >
             {"🌸"}
           </span>
@@ -33,7 +32,6 @@ export const FlowerForm = props => {
           <span role='img' aria-label='Heart' >
             {"🌸"}
           </span>
-
         </button>
         <p>{flowerMessage.length} / 140</p>
       </div>

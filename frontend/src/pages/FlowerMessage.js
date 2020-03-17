@@ -2,6 +2,7 @@ import React from 'react'
 import moment from 'moment' 
 import './flowermessage.css'
 
+// Creating the message
 export const FlowerMessage = props => {
   const { message, createdAt, _id } = props.flowerMessage
   

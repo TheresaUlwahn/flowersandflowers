@@ -3,7 +3,6 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { FlowerList } from './pages/FlowerList'
 import { FlowerInfo } from './pages/FlowerInfo'
 
-
 export const App = () => {
 
   return (

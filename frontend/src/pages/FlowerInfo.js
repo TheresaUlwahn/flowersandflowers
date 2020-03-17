@@ -44,7 +44,7 @@ export const FlowerInfo = () => {
       headers: { "Content-Type": "application/json" }
     })
       .then(() => {
-        console.log('postat!')
+        // console.log('posted  !')
         window.location.reload();
       })
       .catch(err => console.log("error:", err))
