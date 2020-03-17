@@ -45,7 +45,7 @@ export const FlowerInfo = () => {
     })
       .then(() => {
         // console.log('posted  !')
-        window.location.reload();
+        // window.location.reload();
       })
       .catch(err => console.log("error:", err))
   }
