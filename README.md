@@ -7,3 +7,6 @@ My mission :
 
 Developed a user friendly application for people with a botanical interest. Including a way for all visitors to comment on the flower detail page.
 
+# View It Live
+
+https://flowerinspoapi.netlify.com/
