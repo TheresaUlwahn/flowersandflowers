@@ -24,7 +24,7 @@ export const FlowerForm = props => {
           className='flower-button'
           type='submit'
           onClick={handleSubmit}
-          disabled={flowerMessage.length < 6 || flowerMessage.length > 140 ? true : false}>
+          disabled={flowerMessage.length < 3 || flowerMessage.length > 140 ? true : false}>
           <span role='img' aria-label='Heart' >
             {"🌸"}
           </span>
