@@ -28,7 +28,7 @@ export const FlowerInfo = () => {
     fetch(`https://flowers-mock-data.firebaseio.com/comments/TheresaUlwahn/${flowerId}.json`)
       .then((res) => res.json())
       .then((json) => {
-        // console.log('All messages for the flower: ', json)
+        console.log('All messages for the flower: ', json)
         if (json !== null) {
           setFlowerMessages(json)
         }
@@ -44,7 +44,7 @@ export const FlowerInfo = () => {
       headers: { "Content-Type": "application/json" }
     })
       .then(() => {
-        // console.log('posted  !')
+        console.log('posted  !')
         // window.location.reload();
         setPostedMessage(message)
       })
