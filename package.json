@@ -5,7 +5,7 @@
     "postinstall": "npm install --prefix backend"
   },
   "dependencies": {
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "react-moment": "^0.9.7",
     "websocket-extensions": "^0.1.4"
   }
